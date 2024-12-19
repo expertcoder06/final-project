@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmer Product Selling</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="farmer.css">
 </head>
 <body>
     <header>
@@ -25,6 +25,11 @@
                 <input type="number" id="productPrice" name="productPrice" required>
 
                 <button type="submit">Add Product</button>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="image">Upload an image:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                    <button type="submit">Submit</button>
+                  </form>
             </form>
         </section>
 
@@ -37,7 +42,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Farm to Table. All rights reserved.</p>
+        <p>&copy; 2024 kisan sathi. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
